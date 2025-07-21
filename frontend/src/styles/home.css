@@ -1,0 +1,67 @@
+/* src/styles/home.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.home-container {
+  background: url('/img/Fondo_Celeste.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-box {
+  background-color: rgba(255, 255, 255, 0.92);
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  width: 350px;
+}
+
+.home-box h1 {
+  margin-bottom: 10px;
+  color: #3f51b5;
+}
+
+.home-box p {
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.home-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.home-buttons a {
+  padding: 12px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-login {
+  background-color: #3f51b5;
+  color: white;
+}
+
+.btn-login:hover {
+  background-color: #303f9f;
+}
+
+.btn-register {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.btn-register:hover {
+  background-color: #bdbdbd;
+}
