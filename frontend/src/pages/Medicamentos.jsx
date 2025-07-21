@@ -1,6 +1,7 @@
 // frontend/src/pages/Medicamentos.jsx
 import React, { useState } from 'react';
 import axios from 'axios';
+import '../styles/Medicamentos.css';
 
 const Medicamentos = () => {
   const [formulario, setFormulario] = useState({

@@ -1,0 +1,70 @@
+/* src/styles/Egreso.css */
+
+.container {
+  max-width: 650px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 16px;
+  background-color: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.container h2 {
+  text-align: center;
+  color: #2d4059;
+  margin-bottom: 30px;
+  font-size: 26px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #34495e;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 20px;
+  border: 1px solid #ced6e0;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border 0.3s ease;
+  background-color: #f9f9f9;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #00a8ff;
+  background-color: #ffffff;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  background-color: #0097e6;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #007bb6;
+}
+
+.mensaje {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 16px;
+}

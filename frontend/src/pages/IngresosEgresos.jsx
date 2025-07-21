@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import '../styles/IngresosEgresos.css';
+import { useNavigate } from "react-router-dom";
+
 
 const IngresosEgresos = () => {
+  const navigate = useNavigate();
   const [medicamentos, setMedicamentos] = useState([]);
   const [idLote, setIdLote] = useState("");
   const [cantidad, setCantidad] = useState("");
@@ -86,7 +89,11 @@ const IngresosEgresos = () => {
           />
         </label>
 
-        <button onClick={registrarIngreso}>Registrar Ingreso</button>
+        <div className="botones">
+          <button onClick={registrarIngreso}>Registrar Ingreso</button>
+          <button onClick={() => navigate("/egresos")}>Ir a Registrar Egreso</button>
+        </div>
+        
         <p className="mensaje">{mensaje}</p>
       </div>
     </div>

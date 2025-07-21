@@ -19,22 +19,29 @@ export default function Dashboard() {
       <div style={styles.cardsContainer}>
         <Link to="/medicamentos" style={{ textDecoration: 'none' }}>
           <div style={styles.card}>
-            <h3>Medicamentos</h3>
+            <h3 style={{ color: '#ffffff' }}>Medicamentos</h3>
             <p>Gestiona el inventario de medicamentos.</p>
           </div>
         </Link>
-        
-        <Link to="/alertas" style={{ textDecoration: 'none'}}>
+
+        <Link to="/alertas" style={{ textDecoration: 'none' }}>
           <div style={styles.card}>
-            <h2>Alertas</h2>
+            <h2 style={{ color: '#ffffff' }}>Alertas</h2>
             <p>Revisa vencimientos y stock crítico.</p>
           </div>
         </Link>
 
-        <Link to="/ingresos-egresos" style={{ textDecoration: 'none'}}>
+        <Link to="/ingresos-egresos" style={{ textDecoration: 'none' }}>
           <div style={styles.card}>
-            <h2>Ingresos / Egresos</h2>
+            <h2 style={{ color: '#ffffff' }}>Ingresos / Egresos</h2>
             <p>Consulta el movimiento de medicamentos.</p>
+          </div>
+        </Link>
+
+        <Link to="/reportes" style={{ textDecoration: 'none' }}>
+          <div style={styles.card}>
+            <h2 style={{ color: '#ffffff' }}>Reportes</h2>
+            <p>Consulta los reportes Generales</p>
           </div>
         </Link>
       </div>
@@ -46,31 +53,38 @@ const styles = {
   container: {
     padding: '2rem',
     fontFamily: 'Arial, sans-serif',
-    backgroundColor: '#f4f4f4',
+    backgroundColor: '#e3f2fd',
     minHeight: '100vh',
   },
   title: {
     fontSize: '2.5rem',
-    color: '#2c3e50',
+    color: '#970fb6ff',
+    textAlign: 'center',
   },
   subtitle: {
     fontSize: '1.2rem',
     color: '#555',
     marginBottom: '2rem',
+    textAlign: 'center',
   },
   cardsContainer: {
     display: 'flex',
     gap: '1.5rem',
     flexWrap: 'wrap',
+    justifyContent: 'center', // centrado de tarjetas
   },
   card: {
-    flex: '1',
-    minWidth: '250px',
-    backgroundColor: '#fff',
+    width: '260px',
+    backgroundColor: '#970fb6ff',
+    color: '#ffffff', // 🔥 Hace que el texto sea blanco
     padding: '1.5rem',
     borderRadius: '10px',
-    boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
+    boxShadow: '0 4px 8px rgba(0, 105, 135, 0.15)',
     transition: 'transform 0.2s ease',
-    cursor: 'pointer'
+    cursor: 'pointer',
+    textAlign: 'center',
+  },
+  cardHover: {
+    transform: 'scale(5.05)',
   },
 };

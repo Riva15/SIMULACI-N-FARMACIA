@@ -7,6 +7,7 @@ import Dashboard from './pages/Dashboard';
 import Medicamentos from './pages/Medicamentos';
 import NuevoMedicamento from  './pages/NuevoMedicamento';
 import IngresosEgresos from './pages/IngresosEgresos';
+import Egreso from './pages/Egreso';
 
 import Home from "./pages/Home";
 
@@ -22,6 +23,7 @@ export default function App() {
           <Route path="/medicamentos" element={<Medicamentos />} />
           <Route path="/nuevo-medicamento" element={<NuevoMedicamento />} />
           <Route path="/ingresos-egresos" element={<IngresosEgresos />} />
+          <Route path="/egresos" element={<Egreso />} />
 
        </Routes>
       </AuthProvider>

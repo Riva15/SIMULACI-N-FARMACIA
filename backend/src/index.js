@@ -5,6 +5,8 @@ const { port } = require('./config/config');
 const authRoutes = require('./routes/authRoutes');
 const medicamentoRoutes = require('./routes/medicamentos');
 const ingresoRoutes = require('./routes/ingresos');
+const egresosRoutes = require('./routes/egresos');
+const loteRoutes = require("./routes/lotes");
 
 const app = express();
 app.use(cors());
@@ -14,6 +16,9 @@ app.use(express.json());
 app.use('/api/auth', authRoutes);
 app.use('/api/medicamentos', medicamentoRoutes);
 app.use('/api/ingresos', ingresoRoutes);
+app.use('/api/egresos', egresosRoutes);
+app.use("/api/lotes", loteRoutes);
+
 
 // Error handler
 app.use((err, req, res, next) => {
